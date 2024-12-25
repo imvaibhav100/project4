@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "icon" href = "./Necessary_image/logo.png">
+
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <nav class = "nav-option">
+                <a href = "#" style="opacity: 1;" class = "spotify"><i class="fa-brands fa-spotify"></i>Spotify</a>
+                <a href = "#" style="opacity: 0.9;"><i class="fa-solid fa-house"></i> Home</a>
+                
+                <a href = "#"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+            </nav>
+            <div class="library" >
+                <div class = "options">
+                    <a href = "#"><img src = "./Necessary_image/library_icon.png"> Your Library</a>
+                    <div class = "lib-option">
+                        <a href = "#" class = "plus"><i class="fa-solid fa-plus"></i></a>
+                        <a href = "#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class = "box1">
+                    <p class = "p1">Create your first playlist</p>
+                    <p class = "p2">It's easy, we'll help you</p>
+                    <button class = "badge">Create playlist</button>
+                </div>
+                <div class = "box1">
+                    <p class = "p1">Let's find some podcasts to follow</p>
+                    <p class = "p2">We'll keep you updated on new episodes</p>
+                    <button class = "badge">Browse podcast</button>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="main_content">
+            <div class = "sticky-navbar">
+                
+                <div class = "sticky-arrows">
+                    <img src = "./Necessary_image/backward_icon.png">
+                    <img src = "./Necessary_image/forward_icon.png" class = "hide">
+                </div>
+                <div class = "sticky-badges">
+                    <button class = "badge hide">Explore Premium</button>
+                    <button class = "badge install"><i class="fa-solid fa-download" style = "margin-right : 0.3rem;"></i> Install App</button>
+                    <i class="fa-regular fa-user" style = "margin-right : 1rem; opacity : 0.8"></i>
+                </div>
+            </div>
+            <h2 class = "heading">Recently played</h2>
+            <div class = "cards">
+                <img src = "Necessary_image/card1img.jpeg" class = "card-img">
+                <p class = "card-heading">Top-50 global</p>
+                <p class = "card-info">Your daily update of the most played...</p>
+            </div>
+            <h2 class = "heading">Trending now near you</h2>
+            <div class = "cards">
+                <img src = "Necessary_image/card2img.jpeg" class = "card-img">
+                <p class = "card-heading">Top-50 global</p>
+                <p class = "card-info">Your daily update of the most played...</p>
+            </div>
+            <div class = "cards">
+                <img src = "Necessary_image/card3img.jpeg" class = "card-img">
+                <p class = "card-heading">Top-50 global</p>
+                <p class = "card-info">Your daily update of the most played...</p>
+            </div>
+            <div class = "cards">
+                <img src = "Necessary_image/card4img.jpeg" class = "card-img">
+                <p class = "card-heading">Top-50 global</p>
+                <p class = "card-info">Your daily update of the most played...</p>
+            </div>
+            <div class = "cards">
+                <img src = "Necessary_image/card5img.jpeg" class = "card-img">
+                <p class = "card-heading">Top-50 global</p>
+                <p class = "card-info">Your daily update of the most played...</p>
+            </div>
+            <div class = "cards">
+                <img src = "Necessary_image/card6img.jpeg" class = "card-img">
+                <p class = "card-heading">Top-50 global</p>
+                <p class = "card-info">Your daily update of the most played...</p>
+            </div>
+            <div class = "cards">
+                <img src = "Necessary_image/card1img.jpeg" class = "card-img">
+                <p class = "card-heading">Top-50 global</p>
+                <p class = "card-info">Your daily update of the most played...</p>
+            </div>
+            <h2 class = "heading">Featured charts</h2>
+            <div class = "cards">
+                <img src = "Necessary_image/card5img.jpeg" class = "card-img">
+                <p class = "card-heading">Top-50 global</p>
+            </div>
+            <div class = "cards">
+                <img src = "Necessary_image/card6img.jpeg" class = "card-img">
+                <p class = "card-heading">Top-50 global</p>
+            </div>
+            <div class = "cards">
+                <img src = "Necessary_image/card1img.jpeg" class = "card-img">
+                <p class = "card-heading">Top-50 global</p>
+            </div>
+            <div class = "footer">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="music_player">
+            <div class = "album">
+                <img src = "Base_image/album_picture.jpg">
+                <div class = "album-name">
+                    <p style = "opacity : 0.9;">Lover</p>
+                    <p style = "opacity : 0.7;" class = "namepara">Diljit Dosanjh</p>
+                </div>
+                <div class = "icon-div">
+                    <img src = "Base_image/album_icon1.png" class = "icon" style = "opacity: 0.7; height : 1.9rem;">
+                    <img src = "Base_image/album_icon2.png" class = "icon" style = "height : 2rem;">
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-control">
+                    <img src = "Necessary_image/player_icon1.png">
+                    <img src = "Necessary_image/player_icon2.png">
+                    <img src = "Necessary_image/player_icon3.png" style = "opacity: 1; height : 1.5rem;">
+                    <img src = "Necessary_image/player_icon4.png">
+                    <img src = "Necessary_image/player_icon5.png">
+                </div>
+                
+                <div class = "playback-bar">
+                    <span class = "curr-time">00:00</span>
+                    <input type = "range" min = "0" max = "100" class = "progress-bar" step = "1">
+                    <span class = "tot-time">03:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <img src = "Base_image/controls_icon1.png" class = "control-img">
+                <img src= "Base_image/controld_icon2.png" class = "control-img">
+                <img src= "Base_image/controls_icon3.png" class = "control-img1">
+                <img src= "Base_image/controls_icon4.png" class = "control-img1" style = "margin-left : 0.4rem; height : 1.2rem;">
+                <img src= "Base_image/controls_icon5.png" class = "control-img">
+                <div class = "range">
+                    <input type = "range" min = "0" max = "50" class = "volume-bar" step = "1">
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

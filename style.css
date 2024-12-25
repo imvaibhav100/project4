@@ -1,0 +1,344 @@
+body {
+    font-family:sans-serif;
+    background-color : black;
+    color : white;
+    margin : 0;
+    overflow : hidden;
+}
+.main{
+    display : flex;
+    height : 100vh;
+}
+.sidebar{
+    background-color : rgb(25, 25, 25);
+    width : 320px;
+    border-radius: 1rem;
+    overflow : auto;
+}
+.main_content{
+    background-color : rgb(25, 25, 25);
+    flex : 1;
+    border-radius: 1rem;
+    /* padding : 0rem 1rem 1rem 1rem; */
+    margin-left : 0.6rem;
+    overflow : auto;
+}
+.music_player{
+    background-color : black;
+    position : fixed;
+    bottom : 0;
+    width : 100%;
+    height : 65px;
+    display : flex;
+}
+.nav-option{
+    display : flex;
+    flex-direction : column;
+    justify-content : centre;
+    line-height: 2.5rem;
+    background-color: rgb(36, 35, 35);
+    border-radius : 1rem;
+    margin : 0.5rem;
+
+}
+.nav-option a{
+    text-decoration : none;
+    color : white;
+    padding : 0.3rem;
+    padding-left : 2.5rem;
+    opacity : 0.7;
+    font-weight: 550;
+}
+.nav-option a i{
+    margin-right : 0.8rem;
+    font-size: 1.2rem;
+}
+.nav-option a:hover {
+    opacity : 1;
+}
+.options{
+    display : flex;
+    justify-content : centre;
+    line-height: 2.5rem;
+    background-color: rgb(36, 35, 35);
+    border-radius : 1rem;
+    margin : 0.5rem;
+    height : 100%;
+}
+.options img{
+    height : 1.1rem;
+    width : 1.1rem;
+    margin-left : 2.3rem;
+    padding-right : 0.8rem;
+}
+.options a {
+    text-decoration : none;
+    color : white;
+    padding : 0.3rem;
+    opacity : 0.7;
+    margin-top : 0.5rem;
+    font-weight : 550;
+}
+.lib-option{
+    margin-top : 0.8rem;
+    margin-left : 3.2rem;
+}
+.plus {
+    margin-right : 0.4rem;
+}
+.options a:hover{
+    opacity : 1;
+}
+.box1{
+    background-color: rgb(36, 35, 35);
+    border-radius : 1rem;
+    margin : 0.5rem;
+    padding : 0.1rem 2.5rem 0.7rem;
+}
+.p1{
+    font-weight: 550;
+}
+.p2{
+    opacity : 0.9;
+}
+.badge{
+    height: 2rem;
+    font-weight: 600;
+    border-radius : 1.5rem;
+    padding : 0.5rem 1rem;
+    border : none;
+    margin-top : 0.4rem;
+}
+.sticky-navbar{
+    display : flex;
+    /* background-color : rgb(25, 25, 25); */
+    background-color: black;
+    justify-content : space-between;
+    align-items: center;
+    position : sticky;
+    top : 0;
+    z-index: 10;
+    padding : 0.5rem;
+}
+.sticky-badges button{
+    margin-right : 1rem;
+}
+
+@media (max-width : 1000px){
+    .hide{
+        display : none;
+    }
+}
+
+.install{
+    color : white;
+    background-color : rgb(53, 53, 53);
+}
+.cards{
+    background-color: rgb(36, 35, 35);
+    padding : 1rem 1rem 0.5rem 1rem;
+    opacity : 0.9;
+    display : inline-block;
+    margin : 1.5rem 0.5rem 3rem 2rem;
+    border-radius : 1rem;
+    cursor : pointer;
+
+}
+.cards:hover{
+    opacity : 1;
+    box-shadow: 0rem 0.1rem 1rem cyan;
+   
+
+}
+.card-img{
+    width : 11rem;
+    border-radius : 0.5rem;
+}
+.card-heading{
+    width : 11rem;
+    font-weight : 550;
+}
+.card-info{
+    width : 11rem;
+    opacity : 0.7;
+}
+.footer{
+    height : 10rem;
+    margin : 1rem;
+    display : flex;
+    align-items: center;
+}
+.line{
+    width : 100%;
+    border-top : 0.1rem solid white;
+    height : 50%;
+    opacity : 0.7;
+}
+.player-control img{
+    height : 1rem;
+    opacity : 0.8;
+    margin-right : 1.75rem;
+    opacity : 0.7;
+}
+.player-control{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding : 0.5rem;
+}
+.play {
+    height : 2rem;
+    opacity : 1;
+}
+.album{
+    width : 25%;
+}
+.player{
+    width : 50%;
+}
+.controls{
+    width : 25%;
+}
+.playback-bar{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control img:hover{
+    opacity: 1;
+    cursor : pointer;
+}
+.progress-bar {
+    width : 70%;
+    appearance: none;
+    background-color : transparent;
+    cursor : pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: white;
+    border-radius : 1rem;
+    height : 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height : 1rem;
+    width : 1rem;
+    background-color: rgb(0, 255, 13);
+    border-radius : 50%;
+    margin-top : -0.4rem;
+}
+.heading{
+    margin-left : 1rem;
+}
+
+.badge:hover{
+    background-color: black;
+    color : white;
+    transition: 0.2s;
+    cursor : pointer;    
+}
+
+.sticky-arrows img:hover{
+    opacity : 1;
+    cursor : pointer;    
+}
+.sticky-badges i:hover{
+    opacity : 1;
+    cursor : pointer;
+}
+.album{
+    display : flex;
+}
+.album-name{
+    margin-left : 1rem;
+    margin-right : 0.5rem;
+    line-height : 0.5rem;
+}
+.icon{
+    padding: 1rem 0.2rem 1rem 0.8rem;
+}
+.icon-div{
+    margin-left : 1rem;
+}
+.controls{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+.control-img{
+    height : 2.5rem;
+    margin-right : 0.2rem;
+    align-self: center;
+    font-weight:bolder;
+}
+.control-img:hover{
+    opacity : 1;
+    cursor : pointer;
+}
+.control-img1{
+    height : 1.3rem;
+    opacity : 0.7;
+    margin-top : 0.9rem;
+    margin-bottom : 1rem;
+    margin-right : 0.3rem;
+    align-self: center;
+}
+.control-img1:hover{
+    opacity : 1;
+    cursor : pointer;
+}
+.range{
+    align-self: center;
+}
+
+.volume-bar{
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.volume-bar::-webkit-slider-runnable-track{
+    background-color: white;
+    border-radius: 1rem;
+    height : 0.2rem;
+    margin-bottom: 0.27rem;
+
+}
+.volume-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.7rem;
+    width : 0.7rem;
+    background-color: white;
+    border-radius : 50%;
+    margin-top : -0.25rem;
+}
+.icon-div img :hover{
+    opacity : 1;
+    cursor : pointer;
+}
+.album-name p:hover {
+    text-decoration: underline;
+    margin-top : 1.1rem;
+    opacity : 1;
+    cursor : pointer;
+}
+@media (max-width : 600px){
+    .sidebar{
+        display : none;
+    }
+}
+@media (max-width : 900px){
+    .music_player{
+        display : none;
+    }
+}
+@media (max-width : 1215px){
+    .namepara{
+        display : none;
+    }
+}
+.album img:hover {
+    cursor : pointer;
+}
+.icon-div img:hover{
+    cursor : pointer;
+}
